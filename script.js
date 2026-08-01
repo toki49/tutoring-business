@@ -13,9 +13,3 @@ links.querySelectorAll('a').forEach((link) => link.addEventListener('click', () 
   menu.setAttribute('aria-expanded', 'false');
 }));
 document.querySelector('#year').textContent = new Date().getFullYear();
-
-// Static fallback form: replace this handler after connecting Formspree or another provider.
-document.querySelector('.contact-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  alert('Thanks — this form is ready to be connected to a form service before launch.');
-});
